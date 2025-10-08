@@ -1,11 +1,14 @@
+# .github/ISSUE_TEMPLATE/jules-task.yml
 name: Jules task
 description: Ask Jules to implement a small task
+title: "[Jules] New task"
 labels: ["jules"]
 body:
   - type: textarea
     id: task
     attributes:
       label: Task
+      description: What do you want Jules to do?
       value: |
         Task: Scaffold a minimal Python "Hello, World" project and open a PR.
   - type: textarea
