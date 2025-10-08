@@ -1,0 +1,26 @@
+name: Jules task
+description: Ask Jules to implement a small task
+labels: ["jules"]
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: Task
+      value: |
+        Task: Scaffold a minimal Python "Hello, World" project and open a PR.
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements (Acceptance Criteria)
+      value: |
+        - `python hello.py` -> Hello, World!
+        - `pytest -q` passes locally and in CI
+        - PR describes changes + how to run/tests
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      value: |
+        - No new deps except pytest
+        - New branch + PR
+        - Keep repo minimal and clean
